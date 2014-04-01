@@ -1,0 +1,234 @@
+<!--
+To change this template use Tools | Templates.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="es">
+
+<head>
+    <title>TrueCar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./jquery.mobile-1.4.2.min.css">
+    <script src="./script/jquery-1.11.0.min.js"></script>
+    <script src="jquery.mobile-1.4.2.min.js"></script>
+    <script src="./script/truecar.js"></script>
+	<script src="./script/fastclick.js"></script>
+    <style>
+        #cabecera {
+            background:#131d33;
+            color:white;
+        }
+        #body {
+            background: #2a4e83 url(https://a.tcimg.net/tcdc/113.0-5372/images/mobile/bg-mobile-new-homepage.jpg) center bottom no-repeat;
+            background-image: url(https://a.tcimg.net/tcdc/113.0-5372/images/mobile/bg-mobile-new-homepage.jpg);
+            background-position-y: 100%;
+            background-size: 100% auto;
+            background-attachment: initial;
+            background-origin: initial;
+            background-clip: initial;
+            background-color: rgb(42, 78, 131);
+            background-size: 100% auto;
+            position: relative;
+            color:white;
+        }
+        #siguiente {
+            background:orange;
+            color:white;
+            text-align:center;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div data-role="page" id="pag1">
+
+        <div data-role="header" data-position="fixed" id="cabecera">
+
+            <a href="#menu" style="background-color:rgba(0, 0, 0, 0);border:0; margin-top:10px;" class="ui-btn ui-icon-bars ui-btn-icon-left"></a>
+            <h1>TRUECar</h1>
+            <a href="#" style="background-color:rgba(0, 0, 0, 0);border:0; color:white;" class="ui-btn ui-btn-icon-right">Sign-In</a>
+        </div>
+
+        <div data-role="main" class="ui-content" id="body">
+            <section>
+                <header>
+                    <h2>Never Overpay.</h2>
+                    <p>True cars use save an average of $3.046 off MSRP</p>
+                </header>
+
+                <div data-role="controlgroup" data-type="vertical">
+                    <a href="#marca" style="text-align:left; color:lightgrey;" class="ui-btn ui-icon-arrow-d ui-btn-icon-right" >Select a Make:</a>
+                    <a href="#modelo"style="text-align:left; color:lightgrey;" class="ui-btn ui-icon-arrow-d ui-btn-icon-right">Select Model:</a>
+                    <a href="#codpost" style="text-align:left; color:lightgrey;" class="ui-btn ui-icon-forward ui-btn-icon-right">Enter ZIP Code:</a>
+                </div>
+                <a data-role="button" id="siguiente" href="pag2" data-shadow="true" data-corners="true" data-iconshadow="true" data-wrapperels="span" class="ui-btn ui-btn-corner-all ui-btn-up-c"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">NEXT</span></span></a>
+            </section>
+            <a data-role="button" style="background:#5576DD;color:white; width:200px; margin-top:150px; margin-bottom:150px;" href="#" data-theme="c" data-shadow="true" data-corners="true" data-iconshadow="true" data-wrapperels="span" class="ui-btn ui-btn-corner-all ui-btn-up-c"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">How It Works</span></span></a>
+
+        </div>
+
+    </div>
+
+     <div data-role="page" id="marca">
+
+        <div data-role="header" data-position="fixed" id="cabecera">
+
+            <a href="#menu" style="background-color:rgba(0, 0, 0, 0);border:0; margin-top:10px;" class="ui-btn ui-icon-bars ui-btn-icon-left"></a>
+            <h1>Select a Make</h1>  
+        </div>
+        <div data-role="main" class="ui-content"  data-role="collapsible" data-collapsed="true" >
+                
+                        <ul data-role="listview" data-inset="true" data-icon="arrow-d">
+                            <li>
+                                <a href="#acura">
+                                    <img src="https://a.tcimg.net/tcdc/113.0-5372/images/site/main_website/logos/64x64/acura_64x64.png"class="ui-li-icon">ACURA</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="https://a.tcimg.net/tcdc/113.0-5372/images/site/main_website/logos/64x64/bmw_64x64.png"  class="ui-li-icon">BMW</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="https://a.tcimg.net/tcdc/113.0-5372/images/site/main_website/logos/64x64/cadillac_64x64.png"  class="ui-li-icon">Cadillac</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="https://a.tcimg.net/tcdc/113.0-5372/images/site/main_website/logos/64x64/dodge_64x64.png" class="ui-li-icon">Dodge</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="https://a.tcimg.net/tcdc/113.0-5372/images/site/main_website/logos/64x64/ferrari_64x64.png" class="ui-li-icon">Ferrari</a>
+                        </ul>
+                    </div>
+                </div>    
+    
+    <div data-role="page" id="acura">
+
+        <div data-role="header" data-position="fixed" id="cabecera">
+
+            <a href="#menu" style="background-color:rgba(0, 0, 0, 0);border:0; margin-top:10px;" class="ui-btn ui-icon-bars ui-btn-icon-left"></a>
+            <h1>Select a Model</h1>  
+        </div>
+        <div data-role="main" class="ui-content">
+                
+   <ul data-role="listview" data-inset="true">
+    <li data-role="list-divider" style="padding-left:30px;">
+        <img src="https://a.tcimg.net/tcdc/113.0-5372/images/site/main_website/logos/64x64/acura_64x64.png" class="ui-li-icon">ACURA</li>
+    <li class="model" data-search-model="ilx">
+        <a class="item" href="#ilx-pricing">
+            <img class="model-image" src="https://img.truecar.com/modelid_images/v1/115x59/26355/f3q.jpg" class="ui-li-thumb">
+            <span>ILX</span>
+        </a>
+        <a class="deselect close-model" aria-hidden="true" href="#marca"><span>Volver</span></a>
+    </li>
+
+    <li class="model" data-search-model="mdx">
+        <a class="item" href="#">
+            <img class="model-image" src="https://img.truecar.com/modelid_images/v1/115x59/26480/f3q.jpg" class="ui-li-thumb">
+            <span>MDX</span>
+        </a>
+        <a class="deselect close-model" aria-hidden="true" href="#marca"><span>Volver</span></a>
+    </li>
+
+    <li class="model" data-search-model="rdx">
+        <a class="item" href="#">
+            <img class="model-image" src="https://img.truecar.com/modelid_images/v1/115x59/26125/f3q.jpg" class="ui-li-thumb">
+            <span>RDX</span>
+        </a>
+        <a class="deselect close-model" aria-hidden="true"  href="#marca"><span>Volver</span></a>
+    </li>
+    
+    <li class="model" data-search-model="rlx">
+        <a class="item" href="#">
+            <img class="model-image"  src="https://img.truecar.com/modelid_images/v1/115x59/26064/f3q.jpg" class="ui-li-thumb">
+            <span>RLX</span>
+        </a>
+      <a class="deselect close-model" aria-hidden="true"  href="#marca"><span>Volver</span></a>
+    </li>
+    
+    <li class="model" data-search-model="tl">
+        <a class="item" href="#">
+            <img  src="https://img.truecar.com/modelid_images/v1/115x59/26709/f3q.jpg" class="ui-li-thumb">
+            <span>TL</span>
+        </a>
+        <a class="deselect close-model" aria-hidden="true"  href="#marca"><span>Volver</span></a>
+    </li>
+    
+    <li class="model" data-search-model="tsx">
+        <a class="item" href="#">
+            <img class="model-image" src="https://img.truecar.com/modelid_images/v1/115x59/26736/f3q.jpg" class="ui-li-thumb">
+            <span>TSX</span>
+        </a>
+        <a class="deselect close-model" aria-hidden="true"  href="#marca"><span>Volver</span></a>
+    </li>
+    
+    <li class="model" data-search-model="tsx-sport-wagon" >
+            <a href="#">
+            <img src="https://img.truecar.com/modelid_images/v1/115x59/26737/f3q.jpg" class="ui-li-thumb">
+            <span>TSX Sport Wagon</span>
+        </a>
+        <a class="deselect close-model" aria-hidden="true"  href="#marca"></a>
+    </li>
+    
+</ul>
+                    </div>
+                </div>    
+    
+    <div data-role="page" id="menu">
+        <div data-role="header" data-position="fixed" id="cabecera">
+
+            <a href="#pag1" data-icon="back" data-iconpos="notext"></a>
+            <h1>TRUECar</h1>
+            <a href="#" style="background-color:rgba(0, 0, 0, 0);border:0; color:white;" class="ui-btn ui-btn-icon-right">Sign-In</a>
+        </div>
+
+        <ul data-role="listview" data-divider-theme="b" class="ui-listview">
+
+            <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-theme="d" class="ui-btn ui-li ui-btn-inner ui-li">
+                <div class="ui-btn-text">
+                    <a href="#pag1" class="ui-link-inherit ui-btn-text">Home</a>
+                </div>
+            </li>
+
+            <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="d" class="ui-btn ui-li">
+                <div class="ui-btn-inner ui-li">
+                    <div class="ui-btn-text">
+                        <a href="#" class="ui-link-inherit">How TrueCar Works</a>
+                    </div>
+                </div>
+            </li>
+
+            <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="d" class="ui-btn ui-li">
+                <div class="ui-btn-inner ui-li">
+                    <div class="ui-btn-text">
+                        <a href="#" class="ui-link-inherit">Sign In</a>
+                    </div>
+                </div>
+            </li>
+            <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="d" class="ui-btn ui-li">
+                <div class="ui-btn-inner ui-li">
+                    <div class="ui-btn-text">
+                        <a href="#" class="ui-link-inherit">Privacy Policy</a>
+                    </div>
+                </div>
+            </li>
+            <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="d" class="ui-btn ui-li">
+                <div class="ui-btn-inner ui-li">
+                    <div class="ui-btn-text">
+                        <a href="#" class="ui-link-inherit">Terms of Service</a>
+                    </div>
+                </div>
+            </li>
+            <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="d" class="ui-btn ui-li">
+                <div class="ui-btn-inner ui-li">
+                    <div class="ui-btn-text">
+                        <a href="#" class="view-site-link ui-link-inherit">View Full Site</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        
+    </div>
+</body>
+
+</html>

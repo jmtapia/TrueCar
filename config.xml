@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "jmtapia.curso-html5"
+        version   = "1.0.0">
+
+    <name>Curso Ejemplo TrueCar</name>
+    <description>
+        Esto es la descripción de la aplicación
+    </description>
+    <author href="http://www.notengo.es" email="jmtapia@hotmail.es">
+        jmtapia
+    </author>
+
+    <!-- Define app icon for each platform. -->
+    <icon src=".images/icon.png" />
+    <icon src="./images/android36.png"   gap:platform="android"    gap:density="ldpi" />
+    <icon src="./images/android48.png"   gap:platform="android"    gap:density="mdpi" />
+    <icon src="./images/android72.png"   gap:platform="android"    gap:density="hdpi" />
+    <icon src="./images/android96.png"  gap:platform="android"    gap:density="xhdpi" />
+  
+
+    <!-- Define app splash screen for each platform. -->
+    <gap:splash src="./images/spalsh_ldpi.png"  gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="./images/spalsh_mdpi.png"  gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="./images/spalsh_hdpi.png"  gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="./images/spalsh_xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+  
+
+    <!--
+        Define access to external domains.
+
+        <access />            - a blank access tag denies access to all external resources.
+        <access origin="*" /> - a wildcard access tag allows access to all external resource.
+
+        Otherwise, you can specify specific domains:
+    -->
+    <access origin="*"/> <!-- allow local pages -->
+
+</widget>
